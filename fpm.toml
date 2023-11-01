@@ -1,0 +1,24 @@
+name = "fstock"
+version = "0.1.0"
+license = "license"
+author = "Diego Queiroz"
+maintainer = "diegiwg@gmail.com"
+copyright = "Copyright 2023, Diego Queiroz"
+
+[build]
+auto-executables = true
+auto-tests = true
+auto-examples = true
+module-naming = false
+
+[install]
+library = false
+
+[fortran]
+implicit-typing = false
+implicit-external = false
+source-form = "free"
+
+[dependencies]
+stdlib = "*"
+gtk-fortran = { git = "https://github.com/vmagnin/gtk-fortran.git", branch = "gtk4" }
